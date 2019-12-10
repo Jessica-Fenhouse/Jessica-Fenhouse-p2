@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Baby Sleep Tracker</title>
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans">
+</head>
+<body>
+    <header>
+        <h1 class="header-title">Baby Sleep Tracker</h1>
+        <section><img src="images/Baby Sleeping.jpg" alt="Sleeping baby in Mother's arms"></section>
+        <div class="header-menu">
+            <button id="new-button">New</button>
+            <button id="entry-button">Entries</button>
+        </div>
+    </header>
+    <main>
+        <section id="entry-container">
+            <section id="intro-message">
+                <h2>Welcome to Baby Sleep Tracker</h2>
+                <p>Keep track of different methods you use to get baby to sleep and how long they slept for using that method!</p>
+            </section>
+            <section id="display-content"></section>
+        </section>
+    </main>
+
+
+    <!--Modal Dialog (hidden by default)-->
+    <div class="modal" id="modal-dialog">
+        <div class="modal-content">
+            <section>
+                <h2>Child's Name</h2>
+                <input type="text" id="edit-name-text">
+                <span id="edit-name-message"></span>
+            </section>
+            <section>
+                <h2>Date</h2>
+                <input type="text" id="edit-date-text">
+                <span id="edit-date-message"></span>
+            </section>
+            <section>
+                <h2>Method Used</h2>
+                <textarea name="method" id="edit-method-text" cols="20" rows="5"></textarea>
+                <span id="edit-method-message"></span>
+            </section>
+            <section>
+                <h2>Time Slept For</h2>
+                <input type="text" id="edit-time-text">
+                <span id="edit-time-message"></span>
+            </section>
+            <footer>
+                <button id="save-button">Save</button>
+                <button id="cancel-button">Cancel</button>
+            </footer>
+        </div>
+    </div>
+    <div id="modal-backdrop"></div>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
